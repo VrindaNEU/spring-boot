@@ -15,7 +15,15 @@
  */
 
 plugins {
-	id "base"
+	id "org.sonarqube" version "7.0.1.6134"
+	//id "base"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "VrindaNEU_spring-boot"
+    property "sonar.organization", "vrindaneu"
+  }
 }
 
 description = "Spring Boot Build"
